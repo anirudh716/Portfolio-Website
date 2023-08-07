@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anirudh Pandey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Coding Profiles</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hello, My Name Is
+          <span class="purple">
+            <br />
+            Anirudh Pandey</span
+          >
+          <div>And I'm A Passionate</div>
+          <span id="element"></span>
+          <br />
+          <span id="element2"></span>
+        </div>
+        <div class="rightSection">
+          <img src="assets/developer.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <!-- -----------about section------------- -->
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="assets/man.jpg" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Hello there! I'm Anirudh Pandey, a 3rd year Btech CSE student at
+                Graphic Era Hill University, Dehradun. I'm a passionate coder
+                with a relentless desire to learn and grow. I love solving
+                complex problems and building innovative solutions. I have a
+                strong foundation in Data Structures and Algorithms (DSA),
+                sharpened through solving complex problems on platforms like
+                LeetCode. My love for problem-solving keeps me engaged, and I'm
+                always seeking new challenges to overcome. I also love Web
+                Devlopement and I've made few projects using my Web Development
+                skills. Currently, I'm exploring the fascinating world of
+                Machine Learning. Additionally, I'm continuously deepening my
+                knowledge in DSA to understand how to make optimized algorithms.
+                With an insatiable curiosity and a zest for learning, I strive
+                to push the boundaries of my capabilities and make a meaningful
+                impact in the world of technology. Let's embark on this journey
+                of innovation together!
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Core</span><br />Data Structures, Algorithms,DBMS
+                  </li>
+                  <li>
+                    <span>Languages</span><br />C/C++, Python, JavaScript,
+                    HTML/CSS
+                  </li>
+                  <li><span>Tools</span><br />VS Code, PyCharm</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2020-2024</span><br />Graphic Era Hill University<br>Btech Computer
+                    Science Engineering
+                  </li>
+                  <li>
+                    <span>2018-2020</span
+                    ><br />Holy Angel Senior Secondary School(CBSE)<br />11th-12th(PCM) 
+                  </li>
+                  <li>
+                    <span>2005-2017</span><br />Doon Public School(ICSE)
+                    <br />Nursery-10th
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------coding profiles---------- -->
+      <div id="profiles">
+        <div class="container">
+          <hr>
+          <h1 class="sub-title">Coding Profiles</h1>
+          <div class="profiles-list">
+              <div>
+                <img src="assets/leetcode.png" alt="">
+                <h2>Leetcode</h2>
+                <p>(200+ Problems Solved)</p>
+                <a href="https://www.leetcode.com/anirudh196">Visit</a>
+              </div>
+              <!-- <div>
+                <h2>Geeks For Geeks</h2>
+                <p>(100+ Problems Solved)</p>
+                <a href="https://auth.geeksforgeeks.org/user/anirudhcode244/">Visit</a>
+              </div> -->
+              <div>
+                <img src="assets/cnLogo.jpg" alt="" class="cnLogo">
+                <h2>Coding Ninja</h2>
+                <p>(100+ Problems Solved)</p>
+                <a href="https://www.codingninjas.com/studio/profile/f5a40510-3199-4fea-a346-1c601b03b7e8">Visit</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------projects------------->
+      <div id="projects">
+        <div class="container">
+          <hr>
+          <h1 class="sub-title">Projects</h1>
+          <div class="projects-list">
+            <div class="project">
+              <img src="assets/pricePredictor.jpg" alt="" class="image">
+              <div class="layer">
+                <h3>House Price Predicor</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, exercitationem alias hic cum eum fugit dolorum provident architecto quis accusamus.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/netflix.png" alt="" class="image">
+              <div class="layer">
+                <h3>Netflix Clone</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, exercitationem alias hic cum eum fugit dolorum provident architecto quis accusamus.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/portfolio.png" alt="" class="image">
+              <div class="layer">
+                <h3>Portfolio Website</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, exercitationem alias hic cum eum fugit dolorum provident architecto quis accusamus.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------JS------------------>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/d43e5df47f.js" crossorigin="anonymous"></script>
+    <script>
+      var typed1 = new Typed("#element", {
+        strings: ["Web Developer,", "Problem Solver."],
+        typeSpeed: 50,
+        onComplete: function (self) {
+          self.cursor.remove();
+          var typed2 = new Typed("#element2", {
+            strings: ["Welcome To My Portfolio."],
+            typeSpeed: 50,
+          });
+        },
+      });
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
