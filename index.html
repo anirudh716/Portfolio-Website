@@ -13,43 +13,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Coding Profiles</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
+    <div id="header">
+      <div class="container">
+        <nav id="navbar">
+          <img src="assets/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#profiles">Coding Profiles</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hey, I'm
-          <span class="purple">
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hey, I'm
+            <span class="purple">
+              <br />
+              Anirudh Pandey</span
+            >
+            A Passionate
             <br />
-            Anirudh Pandey</span
-          >
-          <div>A Passionate</div>
-          <span id="element"></span>
-          <br />
-          <span id="element2"></span>
+            <span id="element"></span>
+            <br />
+            <span id="element2"></span>
+          </h1>
         </div>
-        <div class="rightSection">
-          <img src="assets/developer.png" alt="" />
-        </div>
-      </section>
+      </div>
+    </div>
+    <main>
       <hr />
       <!-- -----------about section------------- -->
-      <div class="about">
+      <div id="about">
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="assets/man.jpg" />
+              <img src="assets/My project (1).png" />
             </div>
             <div class="about-col-2">
               <h1 class="sub-title">About Me</h1>
@@ -95,12 +96,12 @@
               <div class="tab-contents" id="education">
                 <ul>
                   <li>
-                    <span>2020-2024</span><br />Graphic Era Hill University<br>Btech Computer
-                    Science Engineering
+                    <span>2020-2024</span><br />Graphic Era Hill University<br />Btech
+                    Computer Science Engineering
                   </li>
                   <li>
-                    <span>2018-2020</span
-                    ><br />Holy Angel Senior Secondary School(CBSE)<br />11th-12th(PCM) 
+                    <span>2018-2020</span><br />Holy Angel Senior Secondary
+                    School(CBSE)<br />11th-12th(PCM)
                   </li>
                   <li>
                     <span>2005-2017</span><br />Doon Public School(ICSE)
@@ -115,56 +116,71 @@
       <!-- ----------coding profiles---------- -->
       <div id="profiles">
         <div class="container">
-          <hr>
+          <hr />
           <h1 class="sub-title">Coding Profiles</h1>
           <div class="profiles-list">
-              <div>
-                <img src="assets/leetcode.png" alt="">
-                <h2>Leetcode</h2>
-                <p>(200+ Problems Solved)</p>
-                <a href="https://www.leetcode.com/anirudh196">Visit</a>
-              </div>
-              <!-- <div>
+            <div>
+              <img src="assets/leetcode.png" alt="" />
+              <h2>Leetcode</h2>
+              <p>(200+ Problems Solved)</p>
+              <a href="https://www.leetcode.com/anirudh196">Visit</a>
+            </div>
+            <!-- <div>
                 <h2>Geeks For Geeks</h2>
                 <p>(100+ Problems Solved)</p>
                 <a href="https://auth.geeksforgeeks.org/user/anirudhcode244/">Visit</a>
               </div> -->
-              <div>
-                <img src="assets/cnLogo.jpg" alt="" class="cnLogo">
-                <h2>Coding Ninja</h2>
-                <p>(100+ Problems Solved)</p>
-                <a href="https://www.codingninjas.com/studio/profile/f5a40510-3199-4fea-a346-1c601b03b7e8">Visit</a>
-              </div>
+            <div>
+              <img src="assets/cnLogo.jpg" alt="" class="cnLogo" />
+              <h2>Coding Ninja</h2>
+              <p>(100+ Problems Solved)</p>
+              <a
+                href="https://www.codingninjas.com/studio/profile/f5a40510-3199-4fea-a346-1c601b03b7e8"
+                >Visit</a
+              >
+            </div>
           </div>
         </div>
       </div>
       <!-- ------------projects------------->
       <div id="projects">
         <div class="container">
-          <hr>
+          <hr />
           <h1 class="sub-title">Projects</h1>
           <div class="projects-list">
             <div class="project">
-              <img src="assets/pricePredictor.jpg" alt="" class="image">
+              <img src="assets/pricePredictor.jpg" alt="" class="image" />
               <div class="layer">
                 <h3>House Price Predicor</h3>
-                <p>A House Price Predictor helps to predcit prices of the houses based on some criteria. Crafted using python and ML</p>
+                <p>
+                  A House Price Predictor helps to predcit prices of the houses
+                  based on some criteria. Crafted using python and ML
+                </p>
                 <a href="#"><i class="fa-solid fa-link"></i></a>
               </div>
             </div>
             <div class="project">
-              <img src="assets/netflix.png" alt="" class="image">
+              <img src="assets/netflix.png" alt="" class="image" />
               <div class="layer">
                 <h3>Netflix Clone</h3>
-                <p>Netflix Clone is a dynamic streaming platform crafted using HTML, CSS, and JavaScript. It's responsive design ensures an optimal viewing experience across devices. Beautifully designed with the power of front-end web technologies</p>
+                <p>
+                  Netflix Clone is a dynamic streaming platform crafted using
+                  HTML, CSS, and JavaScript. It's responsive design ensures an
+                  optimal viewing experience across devices. Beautifully
+                  designed with the power of front-end web technologies
+                </p>
                 <a href="#"><i class="fa-solid fa-link"></i></a>
               </div>
             </div>
             <div class="project">
-              <img src="assets/portfolio.png" alt="" class="image">
+              <img src="assets/portfolio.png" alt="" class="image" />
               <div class="layer">
                 <h3>Portfolio Website</h3>
-                <p>An interactive and responsive portfolio website showcasing my work experience, eduction, skills crafted using HTML, CSS, JavaScript.</p>
+                <p>
+                  An interactive and responsive portfolio website showcasing my
+                  work experience, eduction, skills crafted using HTML, CSS,
+                  JavaScript.
+                </p>
                 <a href="#"><i class="fa-solid fa-link"></i></a>
               </div>
             </div>
@@ -175,25 +191,52 @@
       <!-- -----------contact-------------- -->
       <div id="contact">
         <div class="container">
+          <hr />
           <div class="row">
             <div class="contact-left">
               <h1 class="sub-title">Contact Me</h1>
-              <p> <i class="fa-regular fa-envelope"></i> anirudhpandey244@gmail.com</p>
-              <p> <i class="fa-solid fa-phone"></i> 6397766219</p>
+              <p>
+                <i class="fa-regular fa-envelope"></i>
+                anirudhpandey244@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i> 6397766219</p>
               <div class="social-icons">
-                <a href="https://www.instagram.com/anirudhpandey__/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/anirudh-pandey-78938a1b6/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/anirudh716"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/anirudhpandey__/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/anirudh-pandey-78938a1b6/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/anirudh716"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
-              <a href="assets/ResumeAP.pdf" download class="btn">Download Resume</a>
+              <a href="assets/ResumeAP.pdf" download class="btn"
+                >Download Resume</a
+              >
             </div>
             <div class="contact-right">
-              <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your E-mail" required>
-                <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your E-mail"
+                  required
+                />
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
                 <button type="submit" class="btn">Submit</button>
               </form>
+              <span id="msg"></span>
             </div>
           </div>
         </div>
@@ -201,38 +244,19 @@
 
       <!-- -------------last section----------- -->
       <div class="copyright">
-        <p>Copyright © Anirudh Pandey. Made with by <i class="fa-solid fa-heart"></i> Anirudh Pandey</p>
+        <p>
+          Copyright © Anirudh Pandey. Made with by
+          <i class="fa-solid fa-heart"></i> Anirudh Pandey
+        </p>
       </div>
     </main>
 
     <!-- ----------------JS------------------>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://kit.fontawesome.com/d43e5df47f.js" crossorigin="anonymous"></script>
-    <script>
-      var typed1 = new Typed("#element", {
-        strings: ["Web Developer,", "Problem Solver."],
-        typeSpeed: 50,
-        onComplete: function (self) {
-          self.cursor.remove();
-          var typed2 = new Typed("#element2", {
-            strings: ["Welcome To My Portfolio."],
-            typeSpeed: 50,
-          });
-        },
-      });
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
+    <script
+      src="https://kit.fontawesome.com/d43e5df47f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
