@@ -1,3 +1,12 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +33,18 @@ body {
 
 .container{
   padding: 10px 10%;
+  position: relative;
+}
+
+
+.angle-down-icon {
+  margin: 200px 0px 100px 530px; 
+  font-size: 36px;
+}
+
+.angle-down-icon i {
+  font-size: 36px; 
+  animation: bounce 1.5s infinite; 
 }
 
 nav {
@@ -400,6 +421,16 @@ form .btn{
     font-size: 16px;
   }
   
+  .angle-down-icon {
+    margin: 220px 130px 150px; 
+    font-size: 22px;
+  }
+  
+  .angle-down-icon i {
+    font-size: 22px; 
+    animation: bounce 1.5s infinite; 
+  }
+
   nav .fa-solid.fa-circle-xmark{
     display: block;
     font-size: 25px;

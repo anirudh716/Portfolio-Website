@@ -46,6 +46,7 @@ function openmenu() {
 function closemenu() {
   sidemenu.style.right = "-200px";
 }
+
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbz5H9bontofmbYOFdBZGq-i35cklkIticIRfv9vJqX8m0U_5FsdtmvBQiqynmbsRJnY/exec";
 const form = document.forms["submit-to-google-sheet"];
