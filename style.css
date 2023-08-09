@@ -385,8 +385,8 @@ form .btn{
 }
 
 /* ---------------responsiveness-------------- */
-nav .fa-solid.fa-circle-xmark,
-nav .fa-solid.fa-bars {
+.fa-solid.fa-circle-xmark,
+.fa-solid.fa-bars {
   display: none;
 }
 
@@ -400,12 +400,13 @@ nav .fa-solid.fa-bars {
     font-size: 16px;
   }
   
-  nav.fa-solid.fa-circle-xmark{
+  nav .fa-solid.fa-circle-xmark{
     display: block;
     font-size: 25px;
   }  
-  nav.fa-solid.fa-bars{
+  nav .fa-solid.fa-bars{
     display: block;
+    margin-right: 10px;
     font-size: 25px;
   }  
   nav ul{
