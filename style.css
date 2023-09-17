@@ -419,12 +419,12 @@ form .btn{
 
   .header-text h1{
     margin-top: 100%;
-    font-size: 16px;
+    font-size: 26px;
   }
   
   .angle-down-icon {
-    margin: 220px 140px 150px; 
-    font-size: 22px;
+    justify-content: center;
+    margin-top: 15vh;
   }
   
   .angle-down-icon i {
