@@ -11,71 +11,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="assets/favicon-32x32.png" type="image/x-icon" />
   </head>
   <body>
     <section class="front-page">
-    <div id="header">
-      <div class="container">
-        <nav id="navbar">
-          <img src="assets/logo.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#profiles">Coding Profiles</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <h1>
-            Hey, I'm
-            <span class="purple">
+      <div id="header">
+        <div class="container">
+          <nav id="navbar">
+            <img src="assets/logo.png" class="logo" />
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#profiles">Coding Profiles</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+              <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <h1>
+              Hey, I'm
+              <span class="purple">
+                <br />
+                Anirudh Pandey</span
+              >
+              A Passionate
               <br />
-              Anirudh Pandey</span
-            >
-            A Passionate
-            <br />
-            <span id="element"></span>
-            <br />
-            <span id="element2"></span>
-          </h1>
+              <span id="element"></span>
+              <br />
+              <span id="element2"></span>
+            </h1>
+          </div>
+          <span class="angle-down-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
         </div>
-        <span class="angle-down-icon">
-          <i class="fa-solid fa-angle-down"></i>
-        </span>
       </div>
-    </div>
-  </section>
+    </section>
     <main>
       <!-- -----------about section------------- -->
       <div id="about">
         <div class="container">
           <div class="row">
-            <div class="about-col-1">
+            <!-- <div class="about-col-1">
               <img src="assets/My project (1).png" />
-            </div>
+            </div> -->
             <div class="about-col-2">
               <h1 class="sub-title">About Me</h1>
               <p>
-                Hello there! I'm Anirudh Pandey, a 3rd year Btech CSE student at
-                Graphic Era Hill University, Dehradun. I'm a passionate coder
-                with a relentless desire to learn and grow. I love solving
-                complex problems and building innovative solutions. I have a
-                strong foundation in Data Structures and Algorithms (DSA),
-                sharpened through solving complex problems on platforms like
-                LeetCode. My love for problem-solving keeps me engaged, and I'm
-                always seeking new challenges to overcome. I also love Web
-                Devlopement and I've made few projects using my Web Development
-                skills. Currently, I'm exploring the fascinating world of
-                Machine Learning. Additionally, I'm continuously deepening my
-                knowledge in DSA to understand how to make optimized algorithms.
-                With an insatiable curiosity and a zest for learning, I strive
-                to push the boundaries of my capabilities and make a meaningful
-                impact in the world of technology. Let's embark on this journey
-                of innovation together!
+                I’m a full-stack developer with experience in building web applications using HTML, CSS, JavaScript, and Node.js. I’ve worked on projects like a real-time web chat app and a machine learning-based fake news detection system. Skilled in both front-end and back-end development, I’m eager to contribute to innovative projects in a dynamic startup environment, bringing a passion for learning and problem-solving.
               </p>
 
               <div class="tab-titles">
@@ -89,16 +74,21 @@
               <div class="tab-contents active-tab" id="skills">
                 <ul>
                   <li>
-                    <span>Core</span><br />Data Structures, Algorithms,DBMS
+                    <span>Programming Languages:</span><br /> C, C++, JavaScript, Python, SQL
                   </li>
                   <li>
-                    <span>Languages</span><br />C/C++, JavaScript,
-                    HTML/CSS, Python
+                    <span>Web Development:</span><br />HTML, CSS, Bootstrap, Node.js, Express.js
                   </li>
                   <li>
-                    <span>FrameWorks</span><br /> Bootstrap, JQuery
+                    <span>Tools and Frameworks:</span><br />
+                    PyCharm, Jupyter, Git, Postman
                   </li>
-                  <li><span>Tools</span><br />VS Code, PyCharm, Jupyter Notebook</li>
+                  <li>
+                    <span>Libraries:</span><br />NumPy, Pandas
+                  </li>
+                  <li>
+                    <span>Other:</span><br />Data Structures, Object Oriented Programming, Computer Networks
+                  </li>
                 </ul>
               </div>
               <div class="tab-contents" id="education">
@@ -152,13 +142,63 @@
           <h1 class="sub-title">Projects</h1>
           <div class="projects-list">
             <div class="project">
+              <img src="assets/fake news.png" alt="" class="image" />
+              <div class="layer">
+                <h3>Fake News Detection Using ML</h3>
+                <p>
+                  Developed and deployed a machine learning model using Logistic
+                  Regression and Random Forest to classify news articles as real
+                  or fake.
+                </p>
+                <a
+                  href="https://github.com/anirudh716/Fake-News-Detection-using-ML"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/web chat.png" alt="" class="image" />
+              <div class="layer">
+                <h3>Realtime Web Chat App</h3>
+                <p>
+                  Developed a real-time web chat application using Node.js and
+                  Socket.IO, enabling instant communication between users on a
+                  website
+                </p>
+                <a
+                  href="https://github.com/anirudh716/Realtime-Chat-Application"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
               <img src="assets/codespace.png" alt="" class="image" />
               <div class="layer">
                 <h3>CodeSpace - Online Code Editor</h3>
                 <p>
-                  Developed a dynamic and user-friendly online code editor using HTML, CSS, and JavaScript. Helps users to write, edit, and run code seamlessly within a web browser.
+                  Developed a dynamic and user-friendly online code editor using
+                  HTML/CSS and JavaScript. Helps users to write, edit, and run
+                  code within a browser.
                 </p>
-                <a href="https://github.com/anirudh716/CodeSpace"><i class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/anirudh716/CodeSpace"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <br>
+            <div class="project">
+              <img src="assets/headline hub.png" alt="" class="image" />
+              <div class="layer">
+                <h3>Headlines Hub</h3>
+                <p>
+                  Headlines Hub is a web application that allows users to browse
+                  and search for news headlines from various sources. It
+                  utilizes the News API to fetch real-time news data and
+                  presents it in a user-friendly interface.
+                </p>
+                <a href="https://github.com/anirudh716/Headlines-Hub"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
               </div>
             </div>
             <div class="project">
@@ -166,9 +206,15 @@
               <div class="layer">
                 <h3>Sorting Visualizer</h3>
                 <p>
-                  Developed a dynamic sorting visualizer using HTML, CSS, and JavaScript to illustrate the sorting process of various algorithms.Implemented multiple sorting algorithms such as Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort.
+                  Developed a dynamic sorting visualizer using HTML, CSS, and
+                  JavaScript to illustrate the sorting process of various
+                  algorithms.Implemented multiple sorting algorithms such as
+                  Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and
+                  Quick Sort.
                 </p>
-                <a href="https://sortingvisualizerhub.netlify.app"><i class="fa-solid fa-link"></i></a>
+                <a href="https://sortingvisualizerhub.netlify.app"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
               </div>
             </div>
             <div class="project">
@@ -176,9 +222,13 @@
               <div class="layer">
                 <h3>Weather App</h3>
                 <p>
-                  Developed a responsive and user-friendly weather application using HTML, CSS, and JavaScript. Implemented a clean and intuitive user interface for seamless user interaction.
+                  Developed a responsive and user-friendly weather application
+                  using HTML, CSS, and JavaScript. Implemented a clean and
+                  intuitive user interface for seamless user interaction.
                 </p>
-                <a href="https://seetodaysweather.netlify.app"><i class="fa-solid fa-link"></i></a>
+                <a href="https://seetodaysweather.netlify.app"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -242,8 +292,8 @@
       <!-- -------------last section----------- -->
       <div class="copyright">
         <p>
-          Copyright © Anirudh Pandey. Made with <i class="fa-solid fa-heart"></i> by
-          Anirudh Pandey.
+          Copyright © Anirudh Pandey. Made with
+          <i class="fa-solid fa-heart"></i> by Anirudh Pandey.
         </p>
       </div>
     </main>
